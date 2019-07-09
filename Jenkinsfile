@@ -7,12 +7,12 @@ pipeline {
 
   }
   stages {
-    stage('build') {
+    stage('Build') {
       steps {
         sh 'npm install'
       }
     }
-    stage('test') {
+    stage('Test') {
       environment {
         CI = 'true'
       }
