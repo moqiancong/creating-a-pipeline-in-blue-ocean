@@ -22,5 +22,10 @@ npm install'''
         sh './jenkins/scripts/test.sh'
       }
     }
+    stage('Delilver') {
+      steps {
+        sh './jenkins/scripts/deliver.sh'
+      }
+    }
   }
 }
